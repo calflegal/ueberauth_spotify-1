@@ -65,7 +65,6 @@ defmodule Ueberauth.Strategy.Spotify do
       name: user["display_name"],
       nickname: user["id"],
       email: user["email"],
-      image: hd(user["images"])["url"]
     }
   end
 
